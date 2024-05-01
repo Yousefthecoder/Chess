@@ -47,3 +47,6 @@ class Rook(chess_pieces):
 class Pawn(chess_pieces): 
     print("hey buddy")
 
+#gggggggggggggggggggggggggggggggggggggggggggggggggggggghkgjikdysyjsr
+print("hey buddy")
+print("hey buddy")
