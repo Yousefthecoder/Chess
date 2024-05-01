@@ -1,5 +1,5 @@
 print("hey buddy")
-
+LW=50
 
 # 1 pawn
 # 3 Knight
@@ -22,9 +22,12 @@ board = [row_1, row_2, row_3, row_4, row_5, row_6, row_7, row_8]
 
 print(board[7][0])
 
-
-class chess_pieces:
-    Color = ""
+for x in range(0,7*LW,LW):
+    for y in range(0,7*LW,LW):
+          #drawbox(x, y, width, length)
+        
+     class chess_pieces:
+     Color = ""
 
 
 class King(chess_pieces):
