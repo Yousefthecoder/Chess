@@ -1,12 +1,12 @@
 print("hey buddy")
 
+
 # 1 pawn
 # 3 Knight
 # 4 Bishop
 # 5 Rook
 # 8 Queen
 # 9 King
-
 
 row_1 = [0, 0, 0, 0, 0, 0, 0, 0]
 row_2 = [0, 0, 0, 0, 0, 0, 0, 0]
