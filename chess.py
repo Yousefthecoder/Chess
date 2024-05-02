@@ -25,8 +25,7 @@ while run:
     LW = 100
     colour = [white, green]
 
-    # (x + y) % 2 if 0 then white esle greenj
-
+    # (x + y) % 2 if 0 then white esle green
     i = 0
     for x in range(0, 8 * LW, LW):
         for y in range(0, 8 * LW, LW):
