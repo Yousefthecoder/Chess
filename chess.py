@@ -27,7 +27,7 @@ for x in range(0,7*LW,LW):
      if Color > 0:
           print("hey buddy")
 
-     if Color < 0:
+     if Color < 10:
           print("hey buddy")
 
          
