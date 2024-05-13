@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#yyuyggg
-=======
-#yyuy
->>>>>>> f0cfb38fa42a81137a2bc1d1de48a9d2f1957c1a
+
 import pygame
 import subprocess
 
