@@ -58,7 +58,9 @@ while run:
         if list[x] == "KING":
             white_king = pygame.transform.scale(orginonal_image, (50, 70))
         if list[x] == "R":
-            white_king = pygame.transform.scale(orginonal_image, (50, 70))
+            white_rook = pygame.transform.scale(orginonal_image, (50, 70))
+
+    white_rook_A1 = white_rook
 
     # drawbox(x, y, width, length)
 
@@ -93,7 +95,6 @@ while run:
         # create a surface object, image is drawn on it.
 
         # Using blit to copy content from one surface to other
-        surface.blit(white_queen, (350, 730))
 
         # paint screen one time
         pygame.display.flip()
@@ -113,3 +114,8 @@ while run:
     board = [row_1, row_2, row_3, row_4, row_5, row_6, row_7, row_8]
     while game == True:
         pygame.display.update()
+        surface.blit(white_queen, (350, 730))
+        surface.blit(white_knight, (250, 730))
+        surface.blit(white_king, (450, 730))
+        surface.blit(white_bishop, (150, 730))
+        surface.blit(white_rook, (50, 730))
