@@ -71,8 +71,10 @@ while run:
             white_bishop = pygame.transform.scale(orginonal_image, (50, 70))
         if list[x] == "KING":
             white_king = pygame.transform.scale(orginonal_image, (50, 70))
+        if list[x] == "P":
+            white_pawn = pygame.transform.scale(orginonal_image, (50, 70))
         if list[x] == "R":
-            white_king = pygame.transform.scale(orginonal_image, (50, 70))
+            white_rook = pygame.transform.scale(orginonal_image, (50, 70))
 
 
     # drawbox(x, y, width, length)
@@ -89,15 +91,35 @@ while run:
     # 9 King
 
 
-    row_1 = [5, 3, 4, 9, 8, 4, 3, 5]
-    row_2 = [1, 1, 1, 1, 1, 1, 1, 1]
-    row_3 = [0, 0, 0, 0, 0, 0, 0, 0]
-    row_4 = [0, 0, 0, 0, 0, 0, 0, 0]
-    row_5 = [0, 0, 0, 0, 0, 0, 0, 0]
-    row_6 = [0, 0, 0, 0, 0, 0, 0, 0]
-    row_7 = [1, 1, 1, 1, 1, 1, 1, 1]
-    row_8 = [5, 3, 4, 9, 8, 4, 3, 5]
+    board =[[5, 3, 4, 9, 8, 4, 3, 5],
+            [1, 1, 1, 1, 1, 1, 1, 1],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0],
+            [1, 1, 1, 1, 1, 1, 1, 1],
+            [5, 3, 4, 9, 8, 4, 3, 5]]
 
+    for x in range(0, 7, 1):
+        for y in range(0, 7, 1):
+            if board[x][y] == 1:
+                surface.blit(white_pawn, (x * LW, y * LW))
+                
+            if board[x][y] == 3:
+                surface.blit(white_knight, (x * LW, y * LW))
+                
+            if board[x][y] == 4:
+                surface.blit(white_bishop, (x * LW, y * LW))
+                
+            if board[x][y] == 5:
+                surface.blit(white_rook, (x * LW, y * LW))
+                
+            if board[x][y] == 8:
+                surface.blit(white_queen, (x * LW, y * LW))
+                
+            if board[x][y] == 9:
+                surface.blit(white_king, (x * LW, y * LW))
+        
 
     class chess_pieces:
         Color = ""
@@ -116,7 +138,7 @@ while run:
 
 
         # Using blit to copy content from one surface to other
-        surface.blit(white_queen, (350, 730))
+       
 
 
         # paint screen one time
@@ -139,7 +161,7 @@ while run:
         print("hey buddy")
 
 
-    board = [row_1, row_2, row_3, row_4, row_5, row_6, row_7, row_8]
+
     while game == True:
         pygame.display.update()
 
